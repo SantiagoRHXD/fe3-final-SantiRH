@@ -11,23 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
-  border: none;
+  border: 0.1px solid ;
   width: 100%;
   cursor: pointer;
+  border-radius: 0.3cm;
 }
 
-h1{
+.favButton:hover {
+  background-color: #dddddd;
+}
+
+h1, h4, .card p{
   text-align: center;
 }
 
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+  justify-content: end;
+ gap: 20px;
+  padding: 1rem 5rem ;
 }
 
 a{
@@ -47,7 +52,6 @@ footer {
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
   height: 40px;
   margin-top: 2rem;
 }
@@ -75,13 +79,14 @@ form{
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  width: 18%;
+  padding: 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
+  border-radius: 0.4cm;
 }
 
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 0.5px solid rgb(178, 45, 27);
 }
 
 .card-grid{
@@ -92,6 +97,13 @@ form{
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+.card-img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border-radius: 0.4cm;
 }
 
 table {
@@ -120,3 +132,18 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding-left:100px;
+  margin-right: 100px;
+}
+footer div img {
+  margin-right: 30px;
+  width: 50px; 
+  height: 50px; 
+}
+.light footer img {
+  filter: brightness(0);
+}
+
